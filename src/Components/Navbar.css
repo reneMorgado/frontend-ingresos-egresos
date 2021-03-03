@@ -1,0 +1,27 @@
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+}
+
+.navbar__logo {
+    padding-left: 2vw;
+}
+
+.navbar__session {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+    width: 35%;
+}
+
+@media(max-width: 800px) {
+    .navbar__container {
+        display: block;
+    }
+}

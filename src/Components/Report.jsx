@@ -38,8 +38,20 @@ const Report = () => {
   }
 
   useEffect(()=>{
-    fetchData()
-  },[])
+    const loadThis = async() => {
+      const getLog = await axios.get(`${API}/report/${userId}`)
+      setData(getLog.data.reports)
+  
+      const getBalance = await axios.get(`${API}/report/${userId}/amount`)
+      setBalance(getBalance.data.balance)
+  
+      const getUser = await axios.get(`${API}/user/${userId}`)
+      setUser(getUser.data.user)
+  
+      setLoading(false)
+    }
+    loadThis()
+  },[userId])
 
   const ingresoHandler = (e) => {
     if(e.target.value === "Ingreso"){

@@ -1,1 +1,1 @@
-export const API = 'http://renemorgado.herokuapp.com'
+export const API = 'https://renemorgado.herokuapp.com'

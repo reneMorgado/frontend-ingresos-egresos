@@ -11,7 +11,7 @@ const Navbar = () => {
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     <Link to="/" className="navbar-item" href="https://bulma.io">
-      <img src="https://renemorgado.github.io/img/Logo_white.png" width="112" height="28" alt="logo"/>
+      <img src="https://renemorgado.github.io/img/Logo_black.png" width="112" height="28" alt="logo"/>
     </Link>
 
     <Link to="#" role="button" className={`navbar-burger ${dropdown && 'is-active'}`} onClick={()=>setDropdown(!dropdown)} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
